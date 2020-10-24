@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: grey;
+    background-image:  linear-gradient(to right,#bdc3c7 , #2c3e50);
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 120px;
+    grid-gap: 10px;
+    max-width: 1080px;
+    margin: 5% auto;
+    
+}
+
+#container > div{
+
+    background: #cfcfcf;
+}
+
+/* header */
+header{
+    grid-column: 1/4;
+    text-align: center;
+    grid-row: 100px;
+    padding-top: 30px;
+    background: #2c3e50;
+}
+header #title{
+    font-family: fantasy;
+    color: snow;
+    letter-spacing: 10px;
+    font-style: italic;
+}
+header #console{
+    color: red;
+    font-style: italic;
+    font-family: 'code';
+}
+
+/* Create Account box */
+#createAccount{
+    grid-row: 2/4;
+    padding-top: 30px;
+    text-align: center;
+}
+#createAccount > form > input{
+   width: 50%;
+}
+#createAccount > form > input[type="submit"]{
+    height:30px;
+    margin-top: 15px;
+    background: red;
+    border: 0;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Account Holder boxes */
+.accountHolder{
+    grid-row: 4/6;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    padding-top: 20%;
+    
+}
+.accountHolder > p{
+    padding-bottom: 20px;
+}
+
+.accountHolder img.profile{
+    border-radius: 100%;
+    height:45%; 
+}
+
+/* Dashboard */
+#dashboard{
+    padding: 0;
+    text-align: left;
+    grid-row: 2/4;
+}
+#dashboard > h2{
+    padding: 20px 20px 20px 5px;
+}
+#dashboard > p{
+    padding: 8px 5px;
+}
+#dashboard > form > input[type="submit"]{
+    width: 30%;
+    padding:5px 5px;
+    margin-left: 2%;
+}
+
+/* Transaction Box */
+#transaction{
+    grid-row: 2/4;
+    padding: 0;
+}
+#transaction > h2{
+    display: inline-block;
+    padding: 20px 20px 20px 5px;
+    text-align: left;
+}
+#transaction input[name="close"]{
+    display:inline;
+    position: relative;
+    left: 60%;
+}
